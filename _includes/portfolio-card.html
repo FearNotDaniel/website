@@ -1,0 +1,25 @@
+{% assign item = site.data.portfolio[include.tag] %}
+<div class="col-md-4">
+    <div class="work-box">
+      <a href="{{ item.url }}">
+        <div class="work-img">
+          <img src="{{ item.img }}" alt="" class="img-fluid">
+        </div>
+      </a>
+      <div class="work-content">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2 class="w-title">{{ item.name }}</h2>
+            <div class="w-more">
+              {{ item.client }}
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="w-like">
+              <a href="{{ item.url }}"> <span class="ion-ios-plus-outline"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
