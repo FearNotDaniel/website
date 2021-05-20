@@ -48,10 +48,10 @@
   });
 
   /*--/ Star Counter /--*/
-  $('.counter').counterUp({
-    delay: 15,
-    time: 2000
-  });
+  // $('.counter').counterUp({
+  //   delay: 15,
+  //   time: 2000
+  // });
 
   /*--/ Star Scrolling nav /--*/
   var mainNav_height = $('#mainNav').outerHeight() - 22;
