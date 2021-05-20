@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% include portfolio-intro.html %}
+
+<main id="main">
+  <!-- ======= Portfolio Details Section ======= -->
+  <section class="portfolio-details">
+    <div class="container">
+
+      {% include portfolio-hero-panel.html %}
+
+      <div class="portfolio-description">
+        {{ content }}
+      </div>
+    </div>
+  </section><!-- End Portfolio Details Section -->
+
+  <section id="work" class="portfolio-mf sect-pt4 route">
+    <div class="container">
+      <div class="row">
+        {% for itemtag in page.seealso-tags %}
+          {% include portfolio-card.html tag=itemtag %}
+        {% endfor %}
+      </div>
+    </div>
+  </section><!-- End Portfolio Section -->
+</main><!-- End #main -->
+
