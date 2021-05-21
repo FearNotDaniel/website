@@ -21,7 +21,8 @@
   <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="/assets/css/style.css?v=202105201525" rel="stylesheet">
+  {% assign cacheBust = site.time | date:'?v=%s' %}
+  <link href="{{ "/assets/css/style.css" | append: cacheBust }}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: DevFolio - v2.4.1
@@ -106,7 +107,7 @@
   <script src="/assets/vendor/venobox/venobox.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="/assets/js/main.js?v=202105201525"></script>
+  <script src="{{ "/assets/js/main.js" | append: cacheBust }}"></script>
 
 </body>
 
