@@ -1,7 +1,7 @@
 ---
 layout: portfolio-details
 title: Electronic Pharmacy
-img: /assets/img/doctor-ipad-health-medical-clinic-worker-modern-92497344-960x600.jpg
+img: /assets/img/portfolio-pharmacy-tablet.jpg
 seealso-tags:
   - flexi
   - egap
